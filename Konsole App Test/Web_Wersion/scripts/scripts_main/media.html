@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media</title>
+</head>
+<body>
+    <input id="md" type="file" accept="video/*" />
+    <br><br>
+
+    <video id="md2" height="640" width="480" controls></video>
+</body>
+<script>
+    const opn = document.getElementById("md");
+    const opp = document.getElementById("md2");
+
+    const url = this.files[0];
+    opn.addEventListener("change", function () {
+        if (url) {
+            opp.src = URL.createObjectURL(url);
+            opp.start();
+        }
+    });
+</script>
+</html>

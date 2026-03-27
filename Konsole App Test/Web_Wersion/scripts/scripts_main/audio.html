@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio</title>
+</head>
+<body>
+    <input id="aud" type="file" accept="audio/*" />
+    <br><br>
+
+
+    <audio id="ado" controls></audio>
+</body>
+<script>
+    const audio1 = document.getElementById("aud");
+    const audio2 = document.getElementById("ado");
+
+    const file = this.files[0];
+    audio1.addEventListener("change", function () {
+        if (file) {
+            audio2.src = URL.createObjectURL(file);
+            audio2.play();
+        }
+    });
+</script>
+</html>
