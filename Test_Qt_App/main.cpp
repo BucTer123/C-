@@ -2,61 +2,57 @@
 
 #include <QApplication>
 #include <QMainWindow>
-#include <QWidget>
 #include <QLabel>
 #include <QObject>
-#include <QString>
-#include <QFloat16>
-#include <QLineEdit>
 #include <QPushButton>
 
-void btn1_callback()
+void btn1_callback(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    Widget w2;
-    w2->setObjectName("second_win");
-    w2->setStyleSheet(
-        "#main_win {";
-        "   background: white";
-        "   color: black";
-        "   padding: 0";
-        "   margin: 0";
-        "   max-width: 1080px";
-        "   max-height: 1920px";
-        "   width: 100%";
-        "   height: 100%";
-        "}";
+    QApplication b(argc, argv);
+    QMainWindow w2;
+    w2.setObjectName("second_win");
+    w2.setStyleSheet(
+        "#main_win {"
+        "   background: white;"
+        "   color: black;"
+        "   padding: 0;"
+        "   margin: 0;"
+        "   max-width: 1080px;"
+        "   max-height: 1920px;"
+        "   width: 100%;"
+        "   height: 100%;"
+        "}"
     )
 
     QLabel *text2 = new QLabel("You create new Window!");
     text2->setObjectName("second_text");
     text2->setStyleSheet(
-        "#second_text {";
-        " background: white";
-        " color: black";
-        " font-family: sans-serif";
-        " font-size: medium";
-        " font-style: initial";
-        " font-weight: bold";
-        "}";
+        "#second_text {"
+        " background: white;"
+        " color: black;"
+        " font-family: sans-serif;"
+        " font-size: medium;"
+        " font-style: initial;"
+        " font-weight: bold;"
+        "}"
     );
 
     QPushButton *btn2 = new QPushButton("Leave");
     btn2->setObjectName("second_butt");
     btn2->setStyleSheet(
-        "#main_btn {";
-        "   background: whitesmoke";
-        "   padding: 10px";
-        "}";
+        "#second_butt {"
+        "   background: whitesmoke;"
+        "   padding: 10px;"
+        "}"
     );
     QObject::connect(btn2, &QPushButton::clicked, btn2_callback);
 
     w2.show();
-    app.exec();
+    return b.exec();
 }
 
 void btn2_callback() {
-    QDebug("SHUTDOWN!");
+    qDebug() 
     exit(0);
 }
 
