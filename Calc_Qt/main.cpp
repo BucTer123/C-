@@ -6,8 +6,6 @@
 #include <QObject>
 #include <QPushButton>
 #include <QMainWindow>
-#include <QWidget>
-#include <QString>
 #include "calc_gui.h"
 
 void btn1_callback() {
@@ -15,14 +13,14 @@ void btn1_callback() {
 }
 
 int main(int argc, char* argv) {
-    QApplication(argc, argv);
+    QApplication main_app(argc, argv);
 
     QMainWindow w1;
     w1.resize(1920, 1080);
     w1.setTitle("App");
 
-    w1->setObjectName("main_win");
-    w1->setStyleSheet(
+    w1.setObjectName("main_win");
+    w1.setStyleSheet(
         "#main_win {";
             "background: whitesmoke";
             "color: dimgray";
@@ -62,4 +60,7 @@ int main(int argc, char* argv) {
         "}";
     );
     QObject::connect(btn1, &QPushButton::clicked, btn1_callback);
+
+    w1.show();
+    main_app.exec();
 }
