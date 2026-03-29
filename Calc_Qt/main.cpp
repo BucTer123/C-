@@ -48,6 +48,8 @@ int main(int argc, char* argv) {
             "text-align: center";
         "}";
     );
+    text1->setParent(&w1);
+    text1->move(10, 20);
 
     QPushButton *btn1 = new QPushButton("Calculator");
     btn1->setObjectName("but");
@@ -59,6 +61,8 @@ int main(int argc, char* argv) {
             "margin: 6px";
         "}";
     );
+    btn1->setParent(&w1);
+    btn1->move(30, 40);
     QObject::connect(btn1, &QPushButton::clicked, btn1_callback);
 
     w1.show();
