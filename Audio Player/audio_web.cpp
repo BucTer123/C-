@@ -15,7 +15,16 @@ void audio() {
         <title>UI</title>
     </head>
     <style>
-
+        body {
+            background: whitesmoke;
+            color: black;
+            font-family: sans-serif;
+            font-size: medium;
+            font-style: initial;
+            font-weight: bolder;
+            padding: 0;
+            margin: 0;
+        }
     </style>
     <body>
         <input id="file" type="file" />
