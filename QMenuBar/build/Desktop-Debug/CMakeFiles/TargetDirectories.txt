@@ -1,0 +1,9 @@
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/Qt_cpp.dir
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/install.dir
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/Qt_cpp_autogen_timestamp_deps.dir
+/home/shlawa/Qt_cpp/build/Desktop-Debug/CMakeFiles/Qt_cpp_autogen.dir
