@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     w.resize(640, 400);
     w.setWindowTitle("App");
 
-    text1 = new QLabel("Hui!");
+    text1 = new QLabel("Hi!");
     text1->setObjectName("txt");
     text1->setStyleSheet(
 	"#txt {"
