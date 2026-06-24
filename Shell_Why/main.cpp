@@ -75,15 +75,13 @@ int main(int argc, char *argv[])
         "transform: translateX(5px);"
         "}"
     );
-    QObject::connect(btn, &QPushButton::clicked,[]() {
+    QObject::connect(btn, &QPushButton::clicked,[&]() {
         QString cmd = line->text();
 
         if (cmd == "DateTime") {
             date();
         }
         if (cmd == "Leave") {
-            w2->end();
-            w->end();
             exit(0);
         }
         if (cmd == "Browser") {
