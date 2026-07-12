@@ -66,9 +66,9 @@ void game() {
     const int screenWidth = 800;
     const int screenHeight = 600;
 
-    Camera player_position = { 0 };
-    player.position.x = { 400 };
-    player.position.y = { 300 };
+    Camera player_position = { 0f };
+    player.position.x = { 400f };
+    player.position.y = { 300f };
 
     while (WindowShouldClose() == false) {
 
