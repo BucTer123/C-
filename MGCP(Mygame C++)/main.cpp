@@ -67,17 +67,17 @@ void game() {
     const int screenHeight = 600;
 
     Camera player_position = { 0f };
-    player.position.x = { 400f };
-    player.position.y = { 300f };
+    player.position.x = 400f;
+    player.position.y = 300f;
 
-    while (WindowShouldClose() == false) {
+    while (!WindowShouldClose()) {
 
         BeginDrawing();
         ClearBackground(WHITE);
         DrawRectangleRoundedGradientH(player_position, 0.8f, 0.8f, 36, BLUE, RED);
 
         if (IsKeyDown(K_E)) {
-            WindowShouldClose() == true;
+            WindowShouldClose();
             exit(0);
         }
         else if (IsKeyDown(K_W)) {
