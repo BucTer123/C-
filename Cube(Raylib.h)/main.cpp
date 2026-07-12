@@ -31,8 +31,8 @@ int main() {
     SetTargetFPS(120);
 
     Camera camera = { 0 };
-    camera.position.x = -3.0f;
-    camera.position.y = 1.0f;
+    camera.position.x = 400f;
+    camera.position.y = 10f;
 
     const int screenWidth = 800;
     const int screenHeight = 600;
