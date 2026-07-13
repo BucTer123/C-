@@ -30,9 +30,14 @@ int main() {
     InitWindow(800, 600, "kub");
     SetTargetFPS(120);
 
-    Camera camera = { 0 };
-    camera.position.x = 400f;
-    camera.position.y = 10f;
+    const int ScreenWidth = 800;
+    const int ScreenHeight = 600;
+    
+    Vector2 position;
+    Vector2 cube_size = {100, 100};
+    Vector2 cube_default = {100, 100};
+
+    cube_position = (Vector2){GetScreenWidth()/2 - cube_size.x/2, GetScreenHeight()/2 - cube_size.y/2};
 
     const int screenWidth = 800;
     const int screenHeight = 600;
@@ -46,22 +51,22 @@ int main() {
             exit(0);
         }
         else if (IsKeyDown(KEY_W)) {
-            camera.position.y + 10;
+            cube_position.y + 10;
         }
         else if (IsKeyDown(KEY_S)) {
-            camera.position.y - 10;
+            cube_position.y - 10;
         }
         else if (IsKeyDown(KEY_A)) {
-            camera.position.x + 10;
+            cube_position.x + 10;
         }
         else if (IsKeyDown(KEY_D)) {
-            camera.position.x - 10;
+            cube_position.x - 10;
         }
         else if (IsKeyDown(KEY_I)) {
             create_inventory();
         }
 
-        DrawCube(camera.position, 1, 1, 1, BLUE);
+        DrawCube(cube_position, 1, 1, 1, BLUE);
 
         EndDrawing();
     }
