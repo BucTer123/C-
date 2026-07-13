@@ -66,9 +66,8 @@ void game() {
     const int screenWidth = 800;
     const int screenHeight = 600;
 
-    Camera player_position = { 0f };
-    player.position.x = 400f;
-    player.position.y = 300f;
+    Vector2 rectangle_size = {100, 100};
+    Vector2 rectangle_position = (Vector2){GetScreenWidth()/2 - rectangle_size.x/2, GetScreenHeight()/2-rect_size.y/2};
 
     while (!WindowShouldClose()) {
 
@@ -81,16 +80,16 @@ void game() {
             exit(0);
         }
         else if (IsKeyDown(K_W)) {
-            player.position.x += 30;
+            rectangle_position.x += 30;
         }
         else if (IsKeyDown(K_S)) {
-            player.position.x -= 30;
+            rectangle_position.x -= 30;
         }
         else if (IsKeyDown(K_A)) {
-            player.position.y += 30;
+            rectangle_position.y += 30;
         }
         else if (IsKeyDown(K_D)) {
-            player.position.y -= 30;
+            rectangle_position.y -= 30;
         }
         else if (IsKeyDown(K_I)) {
             open_inventory();
