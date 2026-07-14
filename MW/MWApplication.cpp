@@ -1,7 +1,6 @@
 #include "uidir/UI.h"
 #include "MWApplication.h"
 #include "cmddir/cmd.h"
-#include "uidir/OUI.h"
 #include <iostream>
 #include <string>
 
@@ -46,8 +45,5 @@ class MVApp : public MVApplication {
        }
        void cmd_main_text() {
            CMD.main_text();
-       }
-       void oldui_create_window(int screen_widthold_from_function, int screen_heightold_from_function, std::string name_windowold) {
-            OUT.create_new_window();
        }
 };
