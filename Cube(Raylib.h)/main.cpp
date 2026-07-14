@@ -27,7 +27,7 @@ int main() {
     Color WHITE = {255, 255, 255, 255};
     Color BLACK = (0, 0, 0, 255);
     Color BLUE = {0, 0, 255, 255};
-    InitWindow(800, 600, "kub");
+    InitWindow(800, 600, "Cube");
     SetTargetFPS(120);
 
     const int ScreenWidth = 800;
@@ -38,11 +38,8 @@ int main() {
     Vector2 cube_default = {100, 100};
 
     cube_position = (Vector2){GetScreenWidth()/2 - cube_size.x/2, GetScreenHeight()/2 - cube_size.y/2};
-
-    const int screenWidth = 800;
-    const int screenHeight = 600;
-
-    while (WindowShouldClose() == false) {
+    
+    while (!WindowShouldClose() == false) {
         BeginDrawing();
         ClearBackground(WHITE);
         DrawText("CUBE!", 400, 10, 10, BLACK);
