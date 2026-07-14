@@ -9,9 +9,10 @@ void btn_callback() {
 int main() {
     Fl_Window *win = new Fl_Window(800, 600, "Window!");
 
-    Fl_Button *btn = new Fl_Button(10, 20, 30, 40, "Click");
+    Fl_Button *btn = new Fl_Button(400,10,20,10, "Click");
     btn->show();
     btn->callback(btn_callback);
-
+    
     win->show();
+    return 0;
 }
