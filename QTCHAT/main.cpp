@@ -54,7 +54,7 @@ void messenger_main() {
 
     //Position and show first button chat
     btn_chat1->setParent(w2);
-    btn_chat1->move(0, 50);
+    btn_chat1->move(160, 10);
     btn_chat1->show();
 
     //StyleSheet for first chat button
@@ -113,7 +113,7 @@ void messenger_main() {
 
         //Position and size for Hidden text
         hidden_text->setParent(w3);
-        hidden_text->move(10, 20);
+        hidden_text->move(160, 10);
         hidden_text->show();
 
         //style for text
@@ -131,7 +131,7 @@ void messenger_main() {
 
         //Position and show input to write
         input_chat_one->setParent(w3);
-        input_chat_one->move(50, 0);
+        input_chat_one->move(160, 20);
         input_chat_one->show();
 
         //Stylesheet for input to write
@@ -273,7 +273,7 @@ int main(int argc, char *argv[])
 
     //Position and show text1 in the window
     text1->setParent(&w);
-    text1->move(50, 60);
+    text1->move(400, 10);
     text1->show();
 
     //Stylesheet for text1
@@ -292,7 +292,7 @@ int main(int argc, char *argv[])
 
     //Position and show text2 in the window
     text2->setParent(&w);
-    text2->move(70, 80);
+    text2->move(400, 20);
     text2->show();
 
     //Stylesheet for text2
@@ -310,7 +310,7 @@ int main(int argc, char *argv[])
 
     //Position and show
     input_username->setParent(&w);
-    input_username->move(100, 110);
+    input_username->move(400, 30);
     input_username->show();
 
     //Stylesheet for input_username
@@ -330,11 +330,11 @@ int main(int argc, char *argv[])
     );
 
     //Second input = Input password
-    input_password = new QLineEdit("Write username :");
+    input_password = new QLineEdit("Write password :");
 
     //Position and show
     input_password->setParent(&w);
-    input_password->move(120, 130);
+    input_password->move(400, 40);
     input_password->show();
 
     //Stylesheet for input_password
@@ -354,11 +354,11 @@ int main(int argc, char *argv[])
     );
 
     //First Button = Login button to continue
-    btn_log = new QPushButton("Login");
+    btn_log = new QPushButton("Submit");
 
     //Position and show
     btn_log->setParent(&w);
-    btn_log->move(140, 150);
+    btn_log->move(400, 50);
     btn_log->show();
 
     //Stylesheet for First Button
