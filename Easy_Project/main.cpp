@@ -22,8 +22,7 @@ int main(int argc, char *argv[])
 	"}"
     );
     text1->setParent(&w);
-    text1->move(10, 20);
-
+    text1->move(320, 10);
 
     w.show();
     return a.exec();
