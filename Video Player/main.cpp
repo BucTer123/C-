@@ -1,19 +1,24 @@
 #include <iostream>
 #include <string>
+#include <ncurses.h>
 #include "video_web.h"
 
 using namespace std;
 
-int main() {
-    cout << "Hi!" << endl;
-    cout << "Do you want to start? (y/n) :";
-    string c;
-    cin >> c;
+int main() {\
+    initscr();
+    echo();
 
-    if (c == "y" || c == "Y") {
+    mvprintw(10, 10, "Welcome, press s to start and e to exit");
+
+    int ch = getch();
+
+    if (ch == 's') {
         video();
     } else {
-        cout << "Bye!" << endl;
         exit(0);
     }
+    
+    endwin();
+    return 0;
 }
