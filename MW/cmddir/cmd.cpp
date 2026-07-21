@@ -11,8 +11,7 @@ class CMD : public CMD {
     void get_time(auto w) {
         time_t time;
         time(&now);
-        w = ctime(&now);
-        std::cout << w << std::endl;
+        std::cout << ctime(&now) << std::endl;
     }
     void get_color_text(std::string text, std::string color) {
         if (color == "red") {
