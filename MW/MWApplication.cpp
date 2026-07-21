@@ -7,7 +7,7 @@
 class MVApp : public MVApplication {
     public:
        void ui_init(int argc, char *argv[]);
-       void ui_stop(int status) {
+       void stop(int status) {
            exit(status);
        }
        void ui_create_mainwindow(int screen_width_from_function, int screen_height_from_function, std::string name_window_from_function) {
