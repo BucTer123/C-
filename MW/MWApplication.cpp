@@ -6,7 +6,7 @@
 
 class MVApp : public MVApplication {
     public:
-       void ui_init(int argc, char *argv[]);
+       void ui_init(int argc, char **argv) { argc_ = argc; argv_ = argv; }
        void stop(int status) {
            exit(status);
        }
