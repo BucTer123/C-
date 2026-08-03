@@ -50,5 +50,5 @@ void audio() {
     )")
 
     w.run()
-    return 0;
+
 }
