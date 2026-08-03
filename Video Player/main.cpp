@@ -5,13 +5,13 @@
 
 using namespace std;
 
-int main() {\
+int main() {
     initscr();
     echo();
 
     mvprintw(10, 10, "Welcome, press s to start and e to exit");
 
-    int ch = getch();
+    ch = getch();
 
     if (ch == 's') {
         video();
