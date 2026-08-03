@@ -48,7 +48,7 @@ void first_function() {
 	
 	mvprintw(20, 30, "Do you want to clear cache? (y/n) :");
 	
-	int butt2 = getch();
+	butt2 = getch();
 	
 	if (butt2 == 'y') {
 		cache_clear_function();
@@ -71,11 +71,11 @@ void app() {
 	mvprintw(12, 10, "Press 'e' to exit or 'c' to continue :");
 	refresh();
 	
-	int butt = getch();
+	butt = getch();
 	
 	if (butt == 'e') {
 		endwin();
-		return 0;
+		exit(0);
 	}
 	
 	else if (butt == 'c') {
