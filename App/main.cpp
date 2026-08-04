@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     );
 
     QPushButton *btn1 = new QPushButton("Start", &w);
-    btn1->move(400, 30);
+    btn1->move(400, 20);
     btn1->setObjectName("b1");
     btn1->setStyleSheet(
     "#b1 {"
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     QObject::connect(btn1, &QPushButton::clicked, btn1_callback);
 
     QPushButton *btn2 = new QPushButton("Settings", &w);
-    btn2->move(400, 40);
+    btn2->move(400, 30);
     btn2->setObjectName("b2");
     btn2->setStyleSheet(
     "#b2 {"
@@ -60,6 +60,28 @@ int main(int argc, char *argv[])
     "}"
     );
     QObject::connect(btn2, &QPushButton::clicked, btn2_callback);
+
+    QPushButton *btn4 = new QPushButton("Info", &w);
+    btn4->move(400, 40);
+    btn4->setObjectName("b4");
+    btn->setStyleSheet(
+    "#b4 {"
+    "    background: blue"
+    "    color: black"
+    "}"
+    );
+    QObject::connect(btn4, &QPushButton::clicked, [] () {
+        QWidget win_info
+        win_info.resize(300, 200);
+        win_info.setWindowTitle("Window Information");
+
+        QLabel *text_info_1 = new QLabel("Github: BucTer123");
+        text_info_1->move(150, 10);
+        QLabel *text_info_2 = new QLabel("Forgejo : BucTer123");
+        text_info_2->move(150, 20);
+        
+        win_info.show();
+    });
 
     QPushButton *btn3 = new QPushButton("Exit", &w);
     btn2->move(400, 50);
