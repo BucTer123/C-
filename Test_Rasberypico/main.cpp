@@ -4,17 +4,13 @@
 
 int main() {
 	stdio_init_all();
-
-	while (!stdio_usb_connected()) {
-		sleep_ms(1000);
-	}
-
-	printf("Hello, world!\n");
+	
+	printf("Hi!\n");
 
 	uart_init(uart0, 115200);
 	
-	gpio_set_function(0, GPIO_FUNCTION);
-	gpio_set_function(1, GPIO_FUNCTION);
+	gpio_set_function(0, GPIO_FUNC_UART);
+	gpio_set_function(1, GPIO_FUNC_UART);
 
 	uart_puts(uart0, "Starting ...");
 
