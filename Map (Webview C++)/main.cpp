@@ -1,18 +1,23 @@
-#include <iostream>
-#include <string>
+#include <ncurses.h>
 #include "ui.h"
 
 int main() {
-	std::cout << "\033[36m WELCOME! \033[0m" << std::endl;
-	std::cout << "Do you want to start? (y/n) :";
-	std::string question;
-	std::cin >> question;
-	
-	if ( question == "Y" || question == "y") {
-		std::cout << "Starting....." << std::endl;
+	initscr();
+	echo();
+
+	mvprintw(10, 10, "Hi!");
+	mvprintw(20, 10, "Press c to continue or e to exit");
+
+	ch = getch();
+
+	if (ch == 'c') {
+		mvprintw(30, 10, "Starting!");
 		starting_ui();
 	} else {
-		std::cout << "\033[31m BYE! \033[0m" << std::endl;
-		return 0;
+		mvprintw(30, 10, "Bye!");
+		exit(0);
 	}
+	
+	endwin();
+	return 0;
 }
