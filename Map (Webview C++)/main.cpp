@@ -4,7 +4,6 @@
 int main() {
 	initscr();
 	echo();
-
 	mvprintw(10, 10, "Hi!");
 	mvprintw(20, 10, "Press c to continue or e to exit");
 
@@ -17,7 +16,7 @@ int main() {
 		mvprintw(30, 10, "Bye!");
 		exit(0);
 	}
-	
 	endwin();
 	return 0;
+	
 }
