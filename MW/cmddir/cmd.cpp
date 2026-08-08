@@ -65,7 +65,7 @@ class CMD : public CMD {
     void main_text() {
         std::cout << "This is test ...";
     }
-    void inputln(std::strring text_input) {
+    void inputln(std::string text_input) {
         std::cout << text_input << std::endl;
         std::string variable;
         std::cin >> variable;
