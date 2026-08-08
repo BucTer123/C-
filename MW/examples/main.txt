@@ -1,1 +1,35 @@
+Welcome to MW (MyWork or MyFrameWork)
 
+ I created this FrameWork in C++ using header files and other modules or frameworks from C++
+
+ this file is mini documentaition about project.
+
+ Base commands:
+    stop(<int status>); it command shutdown the program but status means number (0 = true or 1 = false).
+    cmd_echoln(<string text_echoln>); it command writes text i console where text_echoln means text what will be in output function
+    cmd_main_text(); it command write main / base text from author what writes in console "This is test.."
+    cmd_gettime(); it command writes in console time and date now 
+    cmd_get_color_text(<string text_from_function>, <string color_from_function); writes text with different color.
+
+    colors:
+        red
+        green
+        yellow
+        blue
+        magenta
+        white
+        cyan
+
+    cmd_inputln(<string text_inputln>); it command write text and wait for answer from user then writes the text what user writes 
+
+    cmd_fst/_fig/_animations(); is fun functions that starting animation or figlet fastfetch text
+
+UI :
+    ui_init(<int argc>, <char** argv>); it command initialize the UI part of framework 
+    ui_create_custom_author_window(<int width/height author window>, <string name_authorwindow>); it command creates the test window created by author
+    ui_create_mainwindow(<int width/height mainwindow>, <string name_mainwindow); it command creates main window 
+that is the main window of the whole GUI program 
+    ui_create_window(<int width/height window, <string name_window>); it command creates normal window 
+    ui_create_label(<int first/second position label, <string text_label>); it command creates label in GUI window
+    ui_create_button(<int first/second position button>, <string text_button>); it command creates button in GUI window 
+    ui_create_input(<int first/second position button>, <string text_input>); it command creates input place in GUI window 
