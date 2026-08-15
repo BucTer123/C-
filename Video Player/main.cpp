@@ -1,9 +1,6 @@
 #include <iostream>
-#include <string>
 #include <ncurses.h>
 #include "video_web.h"
-using namespace std;
-
 int main() {
     initscr();
     echo();
