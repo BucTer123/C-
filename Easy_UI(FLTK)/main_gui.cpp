@@ -21,17 +21,17 @@ void btn2_callback(Fl_Widget*) {
 int main() {
     Fl_Window *win = new Fl_Window(640, 400, "App");
 
-    Fl_Output *text1 = new Fl_Output(50, 50, 50, 55, "Welcome!");
+    Fl_Output *text1 = new Fl_Output(320, 10, 10, 15, "Welcome!");
     text1->show();
 
-    Fl_Output *text2 = new Fl_Output(50, 40, 30, 60, "Choice button :");
+    Fl_Output *text2 = new Fl_Output(320, 20, 10, 15, "Choice button :");
     text2->show();
 
-    Fl_Button *btn1 = new Fl_Button(50, 55, 52, 53, "CURL_REQ");
+    Fl_Button *btn1 = new Fl_Button(320, 30, 10, 15, "CURL_REQ");
     btn1->show();
     btn1->callback(btn1_callback);
 
-    Fl_Button *btn2 = new Fl_Button(45, 42, 46, 47, "CMD");
+    Fl_Button *btn2 = new Fl_Button(320, 40, 10, 15, "CMD");
     btn2->show();
     btn2->callback(btn2_callback);
 
