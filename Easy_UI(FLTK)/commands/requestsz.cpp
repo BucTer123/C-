@@ -1,7 +1,3 @@
-// Source - https://stackoverflow.com/a/12374407
-// Posted by Software_Designer, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-09-01, License - CC BY-SA 3.0
-
 #include <string.h>
 #include <winsock2.h>
 #include <windows.h>
@@ -29,17 +25,14 @@ int i = 0 ;
 int nDataLength;
 string website_HTML;
 
-// website url
 string url = "www.google.com";
 
-//HTTP GET
 string get_http = "GET / HTTP/1.1\r\nHost: " + url + "\r\nConnection: close\r\n\r\n";
 
 
     if (WSAStartup(MAKEWORD(2,2), &wsaData) != 0){
         cout << "WSAStartup failed.\n";
-        system("pause");
-        //return 1;
+        return 1;
     }
 
     Socket=socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
@@ -51,14 +44,11 @@ string get_http = "GET / HTTP/1.1\r\nHost: " + url + "\r\nConnection: close\r\n\
 
     if(connect(Socket,(SOCKADDR*)(&SockAddr),sizeof(SockAddr)) != 0){
         cout << "Could not connect";
-        system("pause");
-        //return 1;
+        return 1;
     }
-
-    // send GET / HTTP
+    
     send(Socket,get_http.c_str(), strlen(get_http.c_str()),0 );
 
-    // recieve html
     while ((nDataLength = recv(Socket,buffer,10000,0)) > 0){        
         int i = 0;
         while (buffer[i] >= 32 || buffer[i] == '\n' || buffer[i] == '\r'){
@@ -70,11 +60,9 @@ string get_http = "GET / HTTP/1.1\r\nHost: " + url + "\r\nConnection: close\r\n\
 
     closesocket(Socket);
     WSACleanup();
-
-    // Display HTML source 
+    
     cout<<website_HTML;
 
-    // pause
     cout<<"\n\nPress ANY key to close.\n\n";
     cin.ignore(); cin.get(); 
 
