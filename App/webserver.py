@@ -41,4 +41,4 @@ def server():
 def main():
     print("Opening index.html....\n")
     print("Open site on localhost 8000\n")
-    app.run(debug=True)
+    app.run(debug=True, port=8000)
