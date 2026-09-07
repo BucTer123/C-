@@ -138,7 +138,15 @@ void start_function() {
 
         QObject::connect(btnq, &QPushButton::clicked, [&] () {
             qDebug("Starting....");
-            system("python webserver.py");
+            #if defined(WIN32)
+            #define _WIN32
+            system("python.exe webserver.py");
+            #endif
+
+            #if defined(linux)
+            #define linux
+            system("python3 webserver.py");
+            #endif
         });
 
         w5.show();
