@@ -162,7 +162,7 @@ void figlettext_function() {
 	system(name.c_str());
 }
 
-int main() {
+void app() {
 	cout << "\033[33m Hi! \033[0m" << endl;
 	
 	cout << "_______________" << endl;
