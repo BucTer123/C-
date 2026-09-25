@@ -9,7 +9,7 @@ Welcome to MW (MyWork or MyFrameWork)
     cmd_echoln(<string text_echoln>); it command writes text i console where text_echoln means text what will be in output function
     cmd_main_text(); it command write main / base text from author what writes in console "This is test.."
     cmd_gettime(); it command writes in console time and date now 
-    cmd_get_color_text(<string text_from_function>, <string color_from_function); writes text with different color.
+    cmd_get_color_text(<string text_from_function>, <string color_from_function>); writes text with different color.
 
     colors:
         red
@@ -20,7 +20,7 @@ Welcome to MW (MyWork or MyFrameWork)
         white
         cyan
 
-    cmd_inputln(<string text_inputln>); it command write text and wait for answer from user then writes the text what user writes 
+    cmd_inputln(<string text_inputln>);  write text and wait for answer from user then writes the text what user writes 
 
     cmd_fst/_fig/_animations(); is fun functions that starting animation or figlet fastfetch text
 
