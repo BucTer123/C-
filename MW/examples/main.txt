@@ -20,7 +20,7 @@ Welcome to MW (MyWork or MyFrameWork)
         white
         cyan
 
-    cmd_inputln(<string text_inputln>);  write text and wait for answer from user then writes the text what user writes 
+    cmd_inputln(<string text_inputln>); this command write text and wait for answer from user then writes the text what user writes 
 
     cmd_fst/_fig/_animations(); is fun functions that starting animation or figlet fastfetch text
 
