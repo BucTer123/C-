@@ -1,2 +1,2 @@
 #include "MW/MWApplication.h"
-int main() { cmd_gettime(); stop(0); }
+int main() { MWApp app; app.cmd_gettime(); app.stop(0); }
