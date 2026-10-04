@@ -1,2 +1,2 @@
 #include "MW/MWApplication.h"
-int main() { cmd_echoln("Hello World!"); }
+int main() { MWApp app; app.cmd_echoln("Hello World!"); }
