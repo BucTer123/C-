@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-class MVApp : public MVApplication {
+class MWApp : public MWApplication {
     public:
        void ui_init(int argc, char **argv) { argc_ = argc; argv_ = argv; }
        void stop(int status) { exit(status); }
