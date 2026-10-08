@@ -1,2 +1,6 @@
 #include "MW/MWApplication.h"
-int main() { cmd_main_text(); stop(0); }
+int main() {
+  MWApp app;
+  app.cmd_main_text();
+  app.stop(0);
+}
