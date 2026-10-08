@@ -1,6 +1,6 @@
 #include "MW/MWApplication.h"
 int main() {
-  MVApp app;
+  MWApp app;
   app.cmd_animation("Welcome!", true); 
   app.stop(0); 
 }  
