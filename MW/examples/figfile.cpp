@@ -1,2 +1,6 @@
 #include "MW/MWApplication.h"
-int main() { cmd_fig("Welcome!", true); exit(0); }
+int main() {
+  MWApp a;
+  a.cmd_fig("Welcome!", true); 
+  a.stop(0);
+}
