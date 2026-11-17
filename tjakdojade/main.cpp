@@ -94,6 +94,13 @@ void wielkopolska() {
 		std::cout << "	There is no tram in Mosina" << std::endl;
 	}
 }
+void dolyslask() {
+	std::cout << "/* DOLNY SLASK! */" << std::endl;
+	std::cout << "Write name of city/town in dolnyslask :";
+	std::string tdolnyslask;
+	std::cin >> tdolnyslask;
+	std::transform(tdolnyslask.begin(), tdolnyslask.end(), tdolnyslask.begin(),[](unsigned char c) { return std::tolower(c);});
+}
 int main() {
 	std::cout << "/* Terminal Transport Info */" << std::endl;
 	std::cout << "Write name of region :";
