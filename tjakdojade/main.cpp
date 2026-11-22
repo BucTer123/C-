@@ -59,7 +59,7 @@ void wielkopolska() {
 		std::cout << "	191: From Osiedle Kopernika To Osiedle Sobielskiego (33 stops)" << std::endl;
 		std::cout << "	193: From Gorczyn PKM To Osiedle Sobielskiego (32 stops)" << std::endl;
 		std::cout << "	194: From Staroleka PKM To Staroleka Wielka (11 stops)" << std::endl;
-		std::cout << "	196: From Rondo Rataje To Rondo Rataje (36 stops)" << std:endl;
+		std::cout << "	196: From Rondo Rataje To Rondo Rataje (36 stops)" << std::endl;
 		std::cout << "	198: From Osiedle Sobielskiego To UAM Osiedle Rozany Potok (6 stops)" << std::endl;
 		std::cout << "	212: From Kacza To Szwajcarska Szpital (33 stops)" << std::endl;
 		std::cout << "	213: From Debiec PKM To Mogilenska (28 stops)" << std::endl;
