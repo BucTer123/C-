@@ -53,6 +53,26 @@ void wielkopolska() {
 		std::cout << "	184: From Rondo Rataje To Termy Maltanskie (29 stops)" << std::endl;
 		std::cout << "	185: From Osiedle Sobielskiego To Rondo Srodka (26 stops)" << std::endl;
 		std::cout << "	186: From Ogrody To Kiekrz (23 stops)" << std::endl;
+		std::cout << "	188: From Osiedle Sobielskiego To Umultowo Szkola (23 stops)" << std::endl;
+		std::cout << "	189: From Staroleka PKM To Unii Lubelskiej (13 stops)" << std::endl;
+		std::cout << "	190: From Krzyzowa Szpital To Osiedle Sobielskiego (30 stops)" << std::endl;
+		std::cout << "	191: From Osiedle Kopernika To Osiedle Sobielskiego (33 stops)" << std::endl;
+		std::cout << "	193: From Gorczyn PKM To Osiedle Sobielskiego (32 stops)" << std::endl;
+		std::cout << "	194: From Staroleka PKM To Staroleka Wielka (11 stops)" << std::endl;
+		std::cout << "	196: From Rondo Rataje To Rondo Rataje (36 stops)" << std:endl;
+		std::cout << "	198: From Osiedle Sobielskiego To UAM Osiedle Rozany Potok (6 stops)" << std::endl;
+		std::cout << "	212: From Kacza To Szwajcarska Szpital (33 stops)" << std::endl;
+		std::cout << "	213: From Debiec PKM To Mogilenska (28 stops)" << std::endl;
+		std::cout << "	214: From Randojewo To Junikowo (40 stops)" << std::endl;
+		std::cout << "	215: From Osiedle Sobielskiego To Osiedle Debina (38 stops)" << std::endl;
+		std::cout << "	216: From Poznan Glowny To Poznan Glowny (55 stops)" << std::endl;
+		std::cout << "	217: From Staroleka PKM To Glowna (22 stops)" << std::endl;
+		std::cout << "	218: From Osiedle Sobielskiego To Franowo (44 stops)" << std::endl;
+		std::cout << "	219: From Poznan Glowny To Wichrowa (19 stops)" << std::endl;
+		std::cout << "	220: From Garbary PKM To Garbary PKM (48 stops)" << std::endl;
+		std::cout << "	221: From Sypniewo To Garbary PKM (32 stops)" << std::endl;
+		std::cout << "	222: From Mogilenska To Port Lotniczy Lawica (50 stops)" << std::endl;
+		std::cout << "	223: From Zieliniec To Kacza (29 stops)" << std::endl;
 	} 
 	else if (twielkopolska == "rawicz") {
 		std::cout << "Buses: " << std::endl;
