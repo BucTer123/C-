@@ -73,6 +73,7 @@ void wielkopolska() {
 		std::cout << "	221: From Sypniewo To Garbary PKM (32 stops)" << std::endl;
 		std::cout << "	222: From Mogilenska To Port Lotniczy Lawica (50 stops)" << std::endl;
 		std::cout << "	223: From Zieliniec To Kacza (29 stops)" << std::endl;
+		std::cout << "	224: From Rondo Lawickich Wydm To Boranta (33 stops)" << std::endl;
 	} 
 	else if (twielkopolska == "rawicz") {
 		std::cout << "Buses: " << std::endl;
