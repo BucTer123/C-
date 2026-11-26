@@ -76,6 +76,7 @@ void wielkopolska() {
 		std::cout << "	224: From Rondo Lawickich Wydm To Boranta (33 stops)" << std::endl;
 		std::cout << "	226: From Poznan Glowny To Poznan Glowny (56 stops)" << std::endl;
 		std::cout << "	227: From Kozleglowny/Osiedle Lesne To Rondo Rataje (15 stops)" << std::endl;
+		std::cout << "	321: From Uniji Lubelskiej To Wroclawska (18 stops)" << std::endl;
 	} 
 	else if (twielkopolska == "rawicz") {
 		std::cout << "Buses: " << std::endl;
